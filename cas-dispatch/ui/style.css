@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: "Satoshi";
+    src: url(Satoshi-Bold.otf)
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    background: none;
+}
+
+
+
+
+.main-container .d-container {
+    position: relative;
+    width: 514.332px;
+    height: 154.225px;
+    flex-shrink: 0;
+    border-radius: 9.453px;
+    border: 1.668px solid #757AEC;
+    background: linear-gradient(74deg, #080A0C 0%, rgba(8, 10, 12, 0.87) 100%);
+    left: 72%;
+    top: 100px;
+}
+
+
+
+.d-header {
+    width: 514.332px;
+    height: 85.225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.d-main-cont {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.header-text {
+    color: #757AEC;
+    text-shadow: 0px 0px 33.44984436035156px #757AEC;
+    font-size: 21.126px;
+    font-family: "Satoshi";
+    font-weight: 900;
+    letter-spacing: 1.479px;
+} 
+
+
+.ellipsetop-left {
+    position: absolute;
+    width: 94.332px;
+    height: 94.332px;
+    flex-shrink: 0;
+    /* border-radius: 94.332px; */
+    background: rgba(117, 192, 236, 0.445);
+    filter: blur(54.278076171875px);
+}
+
+.ellipsetop-right {
+    position: absolute;
+    width: 94.332px;
+    height: 94.332px;
+    flex-shrink: 0;
+    right: 0;
+    /* border-radius: 94.332px; */
+    border-radius: 94.332px;
+    background: rgba(236, 117, 117, 0.363);
+    filter: blur(54.278076171875px);
+}
+
+
+.d-event {
+    color: #767676;
+    font-size: 11.803px;
+    font-family: "Satoshi";
+    font-weight: 500;
+}
+
+
+.nearest-pd-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nearest-pd-img {
+    width: 25.75px;
+    height: 25.75px;
+    flex-shrink: 0;
+    border-radius: 1.12px;
+    border: 0.749px solid #75C1EC;
+    margin-right: 5px;
+}
+
+.nearest-police-infos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nearest-police {
+    color: #75C1EC;
+    font-size: 9.09px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.nearest-name {
+    color: #909090;
+    font-size: 7.878px;
+    font-family: "Satoshi";
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.nearest-ems-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nearest-ems-img {
+    width: 25.75px;
+    height: 25.75px;
+    flex-shrink: 0;
+    border-radius: 1.12px;
+    border: 0.749px solid #EC7575;
+    margin-right: 5px;
+}
+
+.nearest-ems-infos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nearest-ems {
+    color: #EC7575;
+    font-size: 9.09px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.nearest-ems-name {
+    color: #909090;
+    font-size: 7.878px;
+    font-family: "Satoshi";
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.alt-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 514.332px;
+    height: 50.225px;
+}
+
+.callsign-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.callsign-text {
+    color: #757AEC;
+    font-size: 12.158px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    margin-right: 3px;
+    background: none;
+}
+
+.img-loc {
+    width: 8px;
+    height: 10px;
+    margin-right: 3px;
+}
+.name-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.name-text {
+    color: #757AEC;
+    font-size: 12.158px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.loc-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loc-text {
+    color: #757AEC;
+    font-size: 12.158px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.callsignmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.txttest {
+    color: #909090;
+    font-size: 10.537px;
+    font-family: "Satoshi";
+    font-weight: 700;
+}
+
+.namemain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.locmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+ 

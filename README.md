@@ -3,6 +3,16 @@
 
 Usage;
 
+
+##
+Some Infos about script;
+Press "Z" For waypoint.
+This script working with ESX And QBCore Frameworks.
+Resmon Values - None (0.00ms)
+
+
+
+
 ```lua
 
 GetStreetName = function(coords)

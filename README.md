@@ -1,1 +1,27 @@
 # CAS-Dispatch
+
+
+Usage;
+
+```lua
+CAS = {
+    DispatchInfo = {
+        header = "POLICE ALERT", -- Dispatch Header
+        event = "Fleeca Bank Robbery", -- Dispatch footer
+        callsign = "Unknown", -- Event Code
+        forwho = "ambulance", -- For who? police or ems or law etc.
+        blips = {
+            blipText = "Fleeca Bank Robbery", -- Blip Name
+            blipSprite = 153, -- Blip icon
+            blipColour = 71, -- Blip colour
+            blipScale = 0.7, -- Blip scale
+            blipTime = 2, -- minute
+        }
+    }
+}
+
+RegisterCommand("sign14" ,function() -- example
+    local coords = GetEntityCoords(PlayerPedId()) 
+    TriggerServerEvent("cas-sendDispatch",coords, CAS.DispatchInfo, GetStreetName(coords))
+end)
+```

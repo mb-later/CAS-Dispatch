@@ -4,6 +4,14 @@
 Usage;
 
 ```lua
+
+GetStreetName = function(coords)
+    local hashKey = GetStreetNameAtCoord(coords.x, coords.y, coords.z)
+    local streetName = GetStreetNameFromHashKey(hashKey)
+    return streetName
+end
+
+
 CAS = {
     DispatchInfo = {
         header = "POLICE ALERT", -- Dispatch Header

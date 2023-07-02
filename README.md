@@ -15,6 +15,9 @@ This script working with ESX And QBCore Frameworks.
 Resmon Values - None (0.00ms)
 
 
+Preview
+
+![image](https://github.com/mb-later/CAS-Dispatch/assets/68826839/88bed940-ed7d-4c5c-8914-c8be561ee0cd)
 
 
 ```lua

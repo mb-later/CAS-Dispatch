@@ -3,8 +3,6 @@
 
 Usage;
 
-
-##
 Some Infos about script;
 Press "Z" For waypoint.
 This script working with ESX And QBCore Frameworks.

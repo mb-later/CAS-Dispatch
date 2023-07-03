@@ -71,11 +71,32 @@ AddEventHandler("cas-sendDispatch",function(coords, prmtwo,street)
     local players = GetFwPlayers()
     for _, player in ipairs(players) do
         local xPlayer = GetPlayerById(player)
-        if GetJobOfPlayer(xPlayer) == prmtwo.forwho then
-            local source = GetSource(xPlayer)
-            TriggerClientEvent("cas-sendDispatchToClient",source, dispatchInfos,coords)
+        print(type(prmtwo.forwho))
+        if type(prmtwo.forwho) == "table" then
+            for key,value in pairs(prmtwo.forwho) do
+                if GetJobOfPlayer(xPlayer) == value then
+                    local source = GetSource(xPlayer)
+                    TriggerClientEvent("cas-sendDispatchToClient",source, dispatchInfos,coords)
+                end
+            end
         else
-            print("none")
+            if GetJobOfPlayer(xPlayer) == prmtwo.forwho then
+                local source = GetSource(xPlayer)
+                TriggerClientEvent("cas-sendDispatchToClient",source, dispatchInfos,coords)
+            else
+                print("none")
+            end
         end
+    end
+end)
+
+RegisterServerEvent("baseevents:onPlayerKilled")
+AddEventHandler("baseevents:onPlayerKilled",function()
+    local src = source
+    local player = GetPlayerById(src)
+    if player then
+        if GetJobOfPlayer(player) == Config.AmbulancePerm or GetJobOfPlayer(player) == Config.PolicePerm then
+            TriggerClientEvent("civDown", src, GetJobOfPlayer(player), GetNameOfPlayer(player))
+        end 
     end
 end)

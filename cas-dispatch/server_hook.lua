@@ -32,7 +32,7 @@ GetJobOfPlayer = function(xPlayer)
     if Config.Framework == "qb" then
         return xPlayer.PlayerData.job.name
     else
-        return "ESX Get Job"
+        return xPlayer.job.name
     end
 end
 

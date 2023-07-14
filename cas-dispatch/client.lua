@@ -114,7 +114,7 @@ Citizen.CreateThread(function()
             if not isShooting then
                 isShooting = true
                 local coords = GetEntityCoords(PlayerPedId()) 
-                
+                Config.ShotAlert.event = ""
                 local weaponHash = GetSelectedPedWeapon(PlayerPedId())
                 print(weaponHash, GetHashKey(weaponHash))
                 local weaponName = weaponNames[weaponHash]
@@ -143,6 +143,7 @@ Citizen.CreateThread(function()
         if IsPedTryingToEnterALockedVehicle(playerPed) then
             local vehicle = GetVehiclePedIsTryingToEnter(playerPed)
             if DoesEntityExist(vehicle) and not isHotwiring then
+                Config.CarJackingAlert.event = ""
               local vehicleModel = GetEntityModel(vehicle)
               local vehicleName = GetDisplayNameFromVehicleModel(vehicleModel)
               isHotwiring = true

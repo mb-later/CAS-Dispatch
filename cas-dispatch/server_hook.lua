@@ -24,7 +24,7 @@ GetNameOfPlayer = function(xPlayer)
     if Config.Framework == "qb" then
         return xPlayer.PlayerData.charinfo.firstname .. " " .. xPlayer.PlayerData.charinfo.lastname
     else
-        return "ESX Get Name"
+        return xPlayer.getName()
     end
 end
 
